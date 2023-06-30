@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AILMALL</title>
+    <!-- 외부스타일 시트를 불러와서 HTML에 적용하는 방식 -->
+    <link rel="stylesheet" href="./CSS/info.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <!-- 내부 스타일 적용 방식 -->
+    <!-- <style>
+        /* CSS 언어를 사용할 수 있는 태그 */
+        /* 
+            table태그 : 너비 400px
+            tr태그 : 배경색 gray, 높이 50px (Step1~4)
+            tr태그 : 배경색 whitesmoke, 높이 35px
+            td태그 : 글자정렬 right (각 행의 제목에 해당하는 태그만)
+            textarea태그 : 크기조절 none
+            td태그 : 가운데정렬(마지막요소)
+        */
+
+        table {
+            width : 400px;
+        }
+        .tr-tit{
+            background-color : gray;
+            height : 50px;
+        }
+        .tr-content{
+            background-color : whitesmoke ;
+            height : 35px;
+
+        }
+        .tr-content > td:first-child{
+            text-align : right ;
+        }
+        .tr-content:last-child>td{
+            text-align : center;
+        }
+    </style> -->
+</head>
+<body>
+   <!-- 회원가입 폼
+
+-->
+<div class="info-login">
+    <a href="./main.html"><img class="logo-img" src="./img/AILMALL_Logo_white.png" alt=""></a>
+    <h1>AILMALL 회원가입</h1>
+</div>
+<form class="login" action="#" method="get">
+    <table>
+        <!-- STEP1 시작 -->
+        <!-- (tr>td*2)*4 -->
+        <tr class="tr-tit">
+            <th colspan="2" align="left">아이디 / 비밀번호입력</th>
+        </tr>
+        <tr class="tr-content">
+            <td>이름 : </td>
+            <td><input id="name" type="text"/></td>
+        </tr>
+        <tr class="tr-content">
+            <td>아이디 : </td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr class="tr-content">
+            <td>비밀번호 : </td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr class="tr-content">
+            <td>비밀번호 확인 : </td>
+            <td><input type="password"/></td>
+        </tr>
+        <!-- STEP1 끝 -->
+        <!-- STEP2 시작 -->
+        <!-- (tr>td*2)*4 -->
+        <tr class="tr-tit">
+            <th colspan="2" align="left">개인정보</th>
+        </tr>
+        <tr class="tr-content">
+            <td>성별</td>
+            <td>
+                남성 <input type="radio" name="gender" value="man" />
+                여성 <input type="radio" name="gender" value="woman" />
+            </td>
+        </tr>
+        <tr class="tr-content">
+            <td>MBTI</td>
+            <td>
+                <select>
+                    <option>그런거모름</option>
+                    <option>ISTJ</option>
+                    <option>ISFJ</option>
+                    <option>ISFP</option>
+                    <option>ISTP</option>
+                    <option>INTJ</option>
+                    <option>INTP</option>
+                    <option>INFJ</option>
+                    <option>INFP</option>                   
+                    <option>ESFJ</option>
+                    <option>ESTJ</option>                    
+                    <option>ESTP</option>
+                    <option>ESFP</option>
+                    <option>ENFJ</option>
+                    <option>ENFP</option>
+                    <option>ENTJ</option>
+                    <option>ENTP</option>               
+                </select>
+            </td>
+        </tr>
+        <tr class="tr-content">
+            <td>생일</td>
+            <td>
+                <input type="date"/>
+            </td>
+        </tr>
+        <tr class="tr-content">
+            <td>키</td>
+            <td><input class="info" type="text"/>cm</td>
+        </tr>
+        <tr class="tr-content">
+            <td>몸무게</td>
+            <td><input class="info" type="text"/>kg</td>
+        </tr>
+        <tr class="tr-content">
+            <td>신발 사이즈</td>
+            <td><input class="info" type="text"/>mm</td>
+        </tr>
+        <!-- STEP2 끝 -->
+        <!-- STEP3 시작 -->
+        <!-- (tr>td*2)*4 -->
+        <tr class="tr-tit">
+            <th colspan="2" align="left">선호하는 브랜드</th>
+        </tr>
+        <tr class="tr-content">
+            <td>브랜드명 : </td>
+            <td>
+                무신사 <input type="checkbox" name="hobby" value="sc"/>
+                에이블리 <input type="checkbox" name="hobby" value="bs"/>
+                SSF샵 <input type="checkbox" name="hobby" value="bk"/>
+                패션플러스 <input type="checkbox" name="hobby" value="bk"/><br>
+                더블유컨셉 <input type="checkbox" name="hobby" value="bk"/>
+                하프클럽 <input type="checkbox" name="hobby" value="bk"/>
+                LF몰 <input type="checkbox" name="hobby" value="bk"/>
+                코오롱몰 <input type="checkbox" name="hobby" value="bk"/>
+            </td>
+        </tr>
+        <tr class="tr-content">
+            <td>퍼스널 컬러</td>
+            <td>
+                <input type="color"/>
+            </td>
+        </tr>
+    
+        <!-- STEP3 끝 -->
+        <!-- STEP4 시작 -->
+        <!-- (tr>td*2)*4 -->
+        <tr class="tr-tit">
+            <th colspan="2" align="left">가입경로(검색/SNS/블로그/지인추천/광고)</th>
+        </tr>
+        <tr class="tr-content">
+            <td colspan="2">
+                <!-- style ="resize:none"; 는 크기조절을 하지 못하게 하는 지정 -->
+            <textarea cols="57" rows="5" style="resize: none";></textarea>
+            </td>
+        </tr>
+        <tr class="tr-content">
+            <td colspan="2">
+            <input id="end-Btn" type="button" value="완료"/>
+            <input id="reset-Btn"type="reset" value="취소"/>
+            </td>
+        </tr>
+       
+       
+        <!-- STEP4 끝 -->
+    
+    </table>
+
+
+
+
+
+
+</form>
+
+    <script src="./JS/search.js"></script>
+
+</body>
+</html>

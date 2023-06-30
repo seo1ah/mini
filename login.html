@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AILMALL</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="./CSS/login.css" />
+  <link rel="stylesheet" href="./CSS/style.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+ 
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script src="./JS/kakaoLogin.js"></script>
+  
+  <script src="./JS/search.js"></script>
+
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/30c6d242c2.js" crossorigin="anonymous"></script>
+  
+
+  <body style="overflow:hidden;">
+
+    
+    <!-- Slider main container -->
+    <div class="swiper">
+      
+      <div class="main-bar">
+          <div class="mainLeft">
+            <a href="./main.html"><img id="main-img" src="./img/AILMALL_Logo.png" alt=""></a>
+          </div>
+          <div id="header">
+            <div>
+
+            </div>
+            <div id="main-logo mainCenter">
+              <h1><a href="./main.html">AILMALL</h1>
+            </div>
+          </div>
+            <div class="mainRight">
+              <div class="main-icon">
+                    <!-- 로그인아이콘 -->
+                    <div class="user-icon"><a href="./login.html"><i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i></a></div>
+                    <!-- 쇼핑몰 리스트아이콘 -->
+                <div class="user-icon"><a href="./chart.html"><i class="fa-solid fa-ranking-star fa-xl" style="color: #ffffff; display:none;"></i></a></div>
+            </div>
+          <div class="block">
+            <div class="popUp">
+                <a href="https://www.musinsa.com/" target='_blank'><span>1</span> 무신사</a></br>
+                <a href="https://m.ssfshop.com/main?logoutYn=Y" target='_blank'><span>2</span> SSF샵</a></br>
+                <a href="https://www.fashionplus.co.kr/" target='_blank'><span>3</span> 패션플러스</a></br>
+                <a href="https://display.wconcept.co.kr/new" target='_blank'><span>4</span> 더블유컨셉</a></br>
+                <a href="https://www.halfclub.com/" target='_blank'><span>5</span> 하프클럽</a></br>
+                <a href="https://www.lfmall.co.kr/" target='_blank'><span>6</span> LF몰</a></br>
+                <a href="https://www.kolonmall.com/" target='_blank'><span>7</span> 코오롱몰</a></br>
+                <a href="https://www.sivillage.com/" target='_blank'><span>8</span> SI빌리지</a></br>
+                <a href="https://www.goodwearmall.com/" target='_blank'><span>9</span> 탑텐몰</a></br>
+                <a href="https://www.thehandsome.com/" target='_blank'><span>10</span> 더한섬닷컴</a></br>
+            </div>
+            
+              <ul id="ticker">
+                  <li><a href="https://www.musinsa.com/" target='_blank'><span>1</span> 무신사</a></li>
+                  <li><a href="https://m.ssfshop.com/main?logoutYn=Y" target='_blank'><span>2</span> SSF샵</a></li>
+                  <li><a href="https://www.fashionplus.co.kr/" target='_blank'><span>3</span> 패션플러스</a></li>
+                  <li><a href="https://display.wconcept.co.kr/new" target='_blank'><span>4</span> 더블유컨셉</a></li>
+                  <li><a href="https://www.halfclub.com/" target='_blank'><span>5</span> 하프클럽</a></li>
+                  <li><a href="https://www.lfmall.co.kr/" target='_blank'><span>6</span> LF몰</a></li>
+                  <li><a href="https://www.kolonmall.com/" target='_blank'><span>7</span> 코오롱몰</a></li>
+                  <li><a href="https://www.sivillage.com/" target='_blank'><span>8</span> SI빌리지</a></li>
+                  <li><a href="https://www.goodwearmall.com/" target='_blank'><span>9</span> 탑텐몰</a></li>
+                  <li><a href="https://www.thehandsome.com/" target='_blank'><span>10</span> 더한섬닷컴</a></li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+  <!-- Additional required wrapper -->
+  
+  <div class="swiper-wrapper">
+      
+    <div class="container">
+        
+      <div class="container_login">
+          <form action="">
+            <div
+              class="xans-element- xans-member xans-member-login ec-base-box typeThin"
+            >
+              <div class="login">
+                <h3 class="boxTitle"></h3>
+                <fieldset>
+                  <legend>회원로그인</legend>
+                  <label class="id ePlaceholder" title="ID">
+                    <input
+                      id="member_id"
+                      name="member_id"
+                      placeholder="ID"
+                      value
+                      type="text"
+                    />
+                  </label>
+                  <label class="password ePlaceholder" title="PW">
+                    <input
+                      id="member_passwd"
+                      name="member_passwd"
+                      placeholder="PW"
+                      value
+                      type="password"
+                    />
+                  </label>
+                  <p class="security">
+                    <input
+                      id="member_check_save_id0"
+                      name="check_save_id"
+                      value="T"
+                      type="checkbox"
+                    />
+                    <label for="member_check_save_id0">아이디 저장</label>
+                    <img
+                      src="//img.echosting.cafe24.com/design/skin/default/member/ico_access.gif"
+                      alt="보안접속"
+                    />
+                    보안접속
+                  </p>
+                  <a
+                    href="#"
+                    class="btnLogin"
+                    >로그인</a
+                  >
+                  <ul class="snsArea">
+                    <!-- <li class>
+                      <a
+                        href="#none"
+                        onclick="MemberAction.snsLogin('naver', '%2F')"
+                        ><img
+                          src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_naver_login.gif"
+                          alt="네이버 로그인"
+                      /></a>
+                    </li> -->
+                    <li class>
+                      <a
+                        href="javascript:void(0)"
+                        onclick="kakaoLogin();"
+                        ><img
+                          src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_kakao_login.gif"
+                          alt="카카오계정 로그인"
+                      /></a>
+                    </li>
+                    <!-- <li class>
+                      <a href="#none" onclick=""
+                        ><img
+                          src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif"
+                          alt="구글 로그인"
+                      /></a>
+                    </li> -->
+                  </ul>
+                  <ul>
+                    <li><a href="#">아이디찾기</a></li>
+                    <li>
+                      <a href="#"
+                        >비밀번호찾기</a
+                      >
+                    </li>
+                    <li><a href="./info.html">회원가입</a></li>
+                  </ul>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+      </div>
+      <!-- <h1 class="logo">로고</h1>
+        <input type="text" id="id" class="account" placeholder="아이디" />
+        <input
+          type="password"
+          id="password"
+          class="account"
+          placeholder="비밀번호"
+        />
+        <button id="login" class="account">로그인</button>
+        <a href="javascript:void(0)">
+          <img
+            id="kakao"
+            class="account"
+            onclick="kakaoLogin();"
+            src="../../image/kakao/kakao_login_medium_narrow.png"
+            alt="카카오 로그인"
+          />
+        </a> -->
+
+      <!-- 카카오 로그인 버튼 -->
+      <!-- <div onclick="kakaoLogout();">
+                      <a href="javascript:void(0)">
+                          <span>카카오 로그아웃</span>
+                      </a>
+                  </div> -->
+    </div>
+    <!-- 컨테이너 끝 -->
+
+    <!-- 푸터 시작 -->
+    <div id="footer">
+      <div class="foot_info">
+        <div class="inner">
+          <div class="customer">
+            <h3>CUSTOMER SERVICE</h3>
+            <p class="tel">010-1234-5678</p>
+            <p>
+              M-F AM 11:00 - PM 17:00<br />
+              SAT, SUN, REDDAY OFF
+            </p>
+          </div>
+          <div class="bank">
+            <h3>BANK ACCOUNT</h3>
+            <p>
+              한국은행 000000-00-000000<br />
+              예금주 : Legend A
+            </p>
+          </div>
+          <div class="xans-element- xans-layout xans-layout-footer company">
+            <h3>COMPANY INFORMATION</h3>
+            <ul>
+              <li class="">
+                주식회사 Legend A　|　대표 Legend A　|　 광주광역시 동구
+                제봉로 92　|　010-0000-0000
+              </li>
+
+              <li class="">
+                <span
+                  >COPYRIGHT (C) <em>주식회사 Legend A</em> ALL RIGHTS
+                  RESERVED. DESIGNED BY DDONGRIM</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 푸터 끝 -->
+  </div>
+
+  <script src="./JS/login.js"></script>
+  <script src="./JS/search.js"></script>
+  </body>
+
+
+</html>

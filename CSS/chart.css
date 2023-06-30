@@ -1,0 +1,1003 @@
+/* @font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: "900";
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.chart_main_zip {
+    font-family: 'SUIT-Regular';
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. 팝업창 */
+.btn_open_1 {
+    font-weight: bold;
+    margin: 5px;
+    padding: 4px 6px;
+    background: #000;
+    color: #fff;
+}
+
+.pop_wrap_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    font-size: 0;
+    text-align: center;
+}
+
+.pop_wrap_1:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.pop_wrap_1 .pop_inner_1 {
+    display: inline-block;
+    padding: 20px 30px;
+    background: #fff;
+    width: 200px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.btn_close_1 {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 33%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/* 2. 팝업창(여성 의류) */
+.btn_open_2 {
+    font-weight: bold;
+    margin: 5px;
+    padding: 4px 6px;
+    background: #000;
+    color: #fff;
+}
+
+.pop_wrap_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    font-size: 0;
+    text-align: center;
+}
+
+.pop_wrap_2:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.pop_wrap_2 .pop_inner_2 {
+    display: inline-block;
+    width: 45%;
+    height: 80%;
+    background: #fff;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: 'SUIT-Regular';
+
+}
+
+.pop_inner_cont_2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_header_2 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.pop_header_title_2 {
+    width: 91%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.X_btn_2 {
+    width: 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.btn_close_2 {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.pop_main_zip_2 {
+    height: 92%;
+}
+
+.pop_main_2_1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.pop_main_1 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.pop_item_pic {
+    height: 70%;
+    background-size: 100%;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* .pop_item_pic img{
+    width: 100%;
+    height: 100%;
+} */
+.pop_item_store {
+    height:12%;
+    white-space:nowrap;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_item_name {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height:7.5%;
+    white-space:nowrap;
+    margin-left:15px;
+
+}
+
+.pop_item_pr {
+    height:6.5%;
+    white-space:nowrap;
+    margin-left:15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.pop_main_2 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_3 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_4 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_5 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_6 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart_zip {
+    display: flex;
+    height: 140vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* 2. 팝업창(여성 의류) */
+.pop_info_3 {
+    font-weight: bold;
+    margin: 5px;
+    padding: 4px 6px;
+    background: #000;
+    color: #fff;
+}
+
+.pop_wrap_3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    font-size: 0;
+    text-align: center;
+}
+
+.pop_wrap_3:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.pop_wrap_3 .pop_inner_3 {
+    display: inline-block;
+    width: 45%;
+    height: 80%;
+    background: #fff;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: 'SUIT-Regular';
+}
+
+.pop_inner_cont_3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_header_3 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.pop_header_title_3 {
+    width: 91%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.X_btn_3 {
+    width: 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.btn_close__3 {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.pop_main_zip_3 {
+    height: 92%;
+}
+
+.pop_main_3_1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.pop_main_1 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.pop_item_pic {
+    height: 70%;
+    background-size: 100%;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* .pop_item_pic img{
+    width: 100%;
+    height: 100%;
+} */
+.pop_item_store {
+    white-space:nowrap;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_item_name {
+    font-size: 15px;
+    height:7.5%;
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+    margin-left:15px;
+}
+
+.pop_item_pr {
+    height:6.5%;
+    white-space:nowrap;
+    display: flex;
+    align-items: center;
+    margin-left:15px;    
+}
+
+.pop_main_2 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_3 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_4 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_5 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop_main_6 {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart_zip {
+    display: flex;
+    height: 140vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/* 팝업창 끝 */
+
+/* 지훈 css 시작 */
+.chart_header {
+    display: flex;
+    height: 9.59%;
+    background-color: black;
+}
+
+.chart_header a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    width: 800px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+#logo {
+    line-height: 75px;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+#header {
+    width: 85%;
+}
+
+/* 지훈 팝업 css */
+.popUp {
+    display: none;
+    border: 1px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 170px;
+    height: 325px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    /* opacity: 0.5; */
+}
+
+.popUp a {
+    display: block;
+    height: 5px;
+    line-height: 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.popUp span {
+    padding: 2px 5px;
+    color: black;
+    font-weight: bold;
+    margin-right: 3px;
+    font-family: 'musinsa-Medium';
+}
+
+/* 인기검색어 슬라이드 */
+.block {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 30px;
+    /* margin-left: 1000px; */
+    padding: 0 5px;
+    height: 30px;
+    overflow: hidden;
+    background: black;
+    font-family: 'SUIT-Regular';
+    font-size: 20px;
+
+}
+
+.block ul,
+.block li {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+.block li a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #f7efef;
+    text-decoration: none;
+}
+
+.block li span {
+    padding: 2px 5px;
+    color: rgb(245, 238, 238);
+    font-weight: bold;
+    margin-right: 3px;
+    font-family: musinsa-Medium;
+}
+
+/* 리스트 모음집 */
+
+.chart_con{
+    height: 85vh;
+    margin-top: 70px;
+
+}
+
+.chart_main_zip {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60vh;
+}
+
+
+/* 첫번째 리스트 시작 */
+.chart_zipzip1 {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 첫번째 리스트 타이틀명 */
+.chart_title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* 첫번째 쇼핑몰 리스트 */
+.chart_main {
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+.scrolltable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    height: 93%;
+}
+
+.scrolltable thead {
+    display: block;
+    background: black;
+    color: white;
+
+}
+
+.scrolltable thead tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scrolltable tbody {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.scrolltable tbody tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 행 장식 */
+/* .scrolltable th, .scrolltable td {
+  padding: 15px;
+  text-align: left;
+  text-align: center;
+  font-size: 0.875em;
+} */
+.scrolltable th:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable th:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable th:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable td:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable td:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable td:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+    white-space: nowrap;
+}
+
+.scrolltable tbody tr {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* 두번째 리스트 시작 */
+.chart_zipzip2 {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 두번째 리스트 타이틀명 */
+.chart_title2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+
+}
+
+/* 두번째 쇼핑몰 리스트 */
+.chart_main2 {
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+}
+
+.scrolltable2 {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    height: 93%;
+}
+
+.scrolltable2 thead {
+    display: block;
+    background: black;
+    color: white;
+}
+
+.scrolltable2 thead tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scrolltable2 tbody {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.scrolltable2 tbody tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 행 장식 */
+/* .scrolltable th, .scrolltable td {
+  padding: 15px;
+  text-align: left;
+  text-align: center;
+  font-size: 0.875em;
+} */
+.scrolltable2 th:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable2 th:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable2 th:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable2 td:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable2 td:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable2 td:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+    white-space: nowrap;
+}
+
+.scrolltable2 tbody tr {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* 세번째 리스트 시작 */
+.chart_zipzip3 {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 세번째 리스트 타이틀명 */
+.chart_title3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+
+}
+
+/* 세번째 쇼핑몰 리스트 */
+.chart_main3 {
+    width: 100%;
+    height: 90%;
+    margin-top: 40px;
+}
+
+.scrolltable3 {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    height: 93%;
+}
+
+.scrolltable3 thead {
+    display: block;
+    background: black;
+    color: white;
+}
+
+.scrolltable3 thead tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scrolltable3 tbody {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.scrolltable3 tbody tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 행 장식 */
+/* .scrolltable th, .scrolltable td {
+  padding: 15px;
+  text-align: left;
+  text-align: center;
+  font-size: 0.875em;
+} */
+.scrolltable3 th:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable3 th:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable3 th:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable3 td:nth-child(1) {
+    width: 10%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.scrolltable3 td:nth-child(2) {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+    white-space: nowrap;
+}
+
+.scrolltable3 td:nth-child(3) {
+    width: 50%;
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    font-size: 0.875em;
+    white-space: nowrap;
+}
+
+.scrolltable3 tbody tr {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* 푸터(footer) */
+.chart_footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+}
+
+
+.chart_footer .foot_info {
+    padding: 30px 0 45px 0;
+    width: 100%;
+}
+
+.chart_footer .foot_info .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chart_footer .foot_info .inner .customer {
+    float: left;
+}
+
+.chart_footer h3 {
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.chart_footer .foot_info .inner .customer p.tel {
+    font-size: 18px;
+    color: #fff;
+    line-height: 100%;
+    padding-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.chart_footer .foot_info .inner .customer p {
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+.chart_footer .foot_info .inner .bank p {
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 180%;
+}
+
+.chart_footer .foot_info .inner .company {
+    float: left;
+    width: 610px;
+}
+
+.chart_footer .foot_info .inner .company ul li {
+    line-height: 150%;
+    color: #fff;
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.chart_footer .foot_info .inner .company ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.chart_footer .foot_info .inner .company ul li span {
+    letter-spacing: 1px;
+    font-size: 10px;
+}
